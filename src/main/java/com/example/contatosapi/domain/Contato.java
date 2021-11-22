@@ -1,4 +1,4 @@
-package com.example.contatosapi.domain.domain;
+package com.example.contatosapi.domain;
 
 import java.util.Date;
 
@@ -11,7 +11,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Contatos {
+public class Contato {
 	
 	@Id
 	@Column(name="contato_id")
@@ -33,11 +33,11 @@ public class Contatos {
 	@Column(name="createdAt", nullable = false)
 	private Date createdAt;
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
